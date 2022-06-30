@@ -76,7 +76,7 @@ h2 {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: #6070FF;
+  color: #6070ff;
 }
 
 .see-more {
@@ -91,7 +91,7 @@ h2 {
   align-self: flex-start;
 }
 
-.card-info{
+.card-info {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -155,6 +155,7 @@ h3 {
   margin-top: -4px;
   margin-left: -42px;
 }
+
 .my-intro {
   font-style: normal;
   font-weight: 400;
@@ -173,11 +174,10 @@ h3 {
 
 .languages li {
   list-style: none;
-  background-color: whitesmoke;
+  background-color: #f7f7f9;
   margin-bottom: 14px;
   width: 100%;
   height: 66.72px;
-  background: #F7F7F9;
   border-radius: 8px;
   margin-left: -27px;
 }
