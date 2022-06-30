@@ -1,10 +1,10 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio Mobile version
+# Portfolio Mobile version Work section.
 
 > Description the project.
 
--This project creates a skeleton of the home page and the navigation section of a portfolio mobile section.
+-This project creates a skeleton of the work section and the about section page of the portfolio website mobile version.
 
 ## Built With
 
