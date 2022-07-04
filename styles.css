@@ -41,10 +41,7 @@ h2 {
 }
 
 .list {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  list-style: none;
+ list-style: none;
   padding: 0;
   gap: 14px;
   width: 250px;
@@ -77,6 +74,7 @@ h2 {
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #6070ff;
+  float: right;
 }
 
 .see-more {
