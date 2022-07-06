@@ -196,14 +196,14 @@ h5 {
   margin-top: -2px;
 }
 
-#listItem {
+.listItem {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   color: #000;
 }
 
-#listItem img {
+.listItem img {
   float: right;
 }
 
@@ -287,22 +287,22 @@ textarea {
   line-height: 24px;
 }
 
-button:hover {
+.see-more:hover {
   color: white;
   background-color: #6070ff ;
 }
 
-button:active {
+.see-more:active {
   color: white;
   background-color: #2230d2;
 }
 
-button:enabled {
+.see-more:enabled {
   color: #6070ff;
   background-color: white;
 }
 
-button:disabled {
+.see-more:disabled {
   color: #5e6c84;
   background-color: white ;
   border-color: #c1c7d0 ;
