@@ -128,7 +128,6 @@ h3 {
 .about {
   display: grid;
   gap: 80px;
-  padding: 24px;
   border-top-right-radius: 30px;
   background: #fff;
   padding: 20px;
@@ -221,15 +220,17 @@ hr {
   margin-top: 30px;
   margin-bottom: 26px;
 }
-/* Footer css*/
-.contact_section{
+
+/* Footer css */
+.contact_section {
   background: url(images/Contact-img.png);
   background-repeat: no-repeat;
   padding-bottom: 109px;
   height: 100vh;
   margin-top: 89px;
 }
-.footer_content{
+
+.footer_content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -239,10 +240,12 @@ hr {
   background-size: contain;
   background-position: top right;
 }
+
 input {
   height: 26px;
 }
-.form-container{
+
+.form-container {
   display: flex;
   flex-direction: column;
   width: 80%;
@@ -261,6 +264,7 @@ textarea {
 textarea {
   height: 131px;
 }
+
 .contact-header {
   font-style: normal;
   font-weight: bold;
@@ -289,7 +293,7 @@ textarea {
 
 .see-more:hover {
   color: white;
-  background-color: #6070ff ;
+  background-color: #6070ff;
 }
 
 .see-more:active {
@@ -304,6 +308,6 @@ textarea {
 
 .see-more:disabled {
   color: #5e6c84;
-  background-color: white ;
-  border-color: #c1c7d0 ;
+  background-color: white;
+  border-color: #c1c7d0;
 }
