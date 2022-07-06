@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
 * {
   font-family: 'Poppins', sans-serif;
   font-size: 100%;
@@ -80,7 +82,7 @@ h2 {
 }
 
 .see-more {
-  width: 141px; 
+  width: 141px;
   height: 48px;
   left: 0;
   border: 1px solid #6070ff;
@@ -223,18 +225,18 @@ hr {
 .contact_section{
   background: url("images/Contact-img.png");
   background-repeat: no-repeat;
-  padding-bottom: 7px;
-  padding-top: 100px;
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
 }
 .footer_content{
   display: flex;
   flex-direction: column;
   align-items: center;
   background: url("images/contact-bg-image.png");
-  margin: -88px 0 0 0;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top right;
+  background-position-y: 21px;
 }
 input {
   height: 26px;
@@ -242,9 +244,9 @@ input {
 .form-container{
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 90%;
   gap: 20px;
-  margin-top: 35px;
+  margin: 25px 0;
 }
 
 form input,
@@ -256,7 +258,7 @@ textarea {
 }
 
 textarea {
-  height: 170px;
+  height: 140px;
 }
 .contact-header {
   font-style: normal;
@@ -264,8 +266,8 @@ textarea {
   font-size: 40px;
   line-height: 44px;
   color: #fff;
-  margin-top: 85px;
-  margin-bottom: 6px;
+  margin-top: 103px;
+  margin-bottom: 0;
   align-self: center;
 }
 
@@ -275,7 +277,13 @@ textarea {
   font-weight: 400;
   text-align: center;
   color: #ebebff;
-  margin: 12px 39px;
+  margin: 12px 25px;
+}
+
+.submit {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
 }
 
 button:hover {
@@ -298,6 +306,3 @@ button:disabled {
   background-color: white ;
   border-color: #c1c7d0 ;
 }
-
-
-
