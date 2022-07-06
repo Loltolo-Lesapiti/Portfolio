@@ -278,5 +278,26 @@ textarea {
   margin: 12px 39px;
 }
 
+button:hover {
+  color: white;
+  background-color: #6070ff ;
+}
+
+button:active {
+  color: white;
+  background-color: #2230d2;
+}
+
+button:enabled {
+  color: #6070ff;
+  background-color: white;
+}
+
+button:disabled {
+  color: #5e6c84;
+  background-color: white ;
+  border-color: #c1c7d0 ;
+}
+
 
 
