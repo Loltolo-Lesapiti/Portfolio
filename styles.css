@@ -80,7 +80,7 @@ h2 {
 }
 
 .see-more {
-  width: 134px;
+  width: 141px; 
   height: 48px;
   left: 0;
   border: 1px solid #6070ff;
@@ -129,6 +129,7 @@ h3 {
   padding: 24px;
   border-top-right-radius: 30px;
   background: #fff;
+  padding: 20px;
 }
 
 .about-content {
@@ -218,3 +219,61 @@ hr {
   margin-top: 30px;
   margin-bottom: 26px;
 }
+/* Footer css*/
+.contact_section{
+  background: url("images/Contact-img.png");
+  background-repeat: no-repeat;
+  padding-bottom: 40px;
+  padding-top: 100px;
+}
+.footer_content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("images/contact-bg-image.png");
+  margin: -88px 0 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top right;
+}
+input {
+  height: 26px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form input,
+textarea {
+  border-radius: 8px;
+  border: solid 1px #cfd8dc;
+  padding: 15px;
+  font-size: 1rem;
+}
+
+textarea {
+  height: 170px;
+}
+.contact-header {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 44px;
+  color: #fff;
+  margin-top: 118px;
+  margin-bottom: 0;
+}
+
+.contact-message {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  text-align: center;
+  color: #ebebff;
+  margin: 12px 24px;
+}
+
+
+
