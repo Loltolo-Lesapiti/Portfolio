@@ -19,12 +19,15 @@ body {
 }
 
 /* Header section css */
-header {
+.menu_mobile {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 5% 50px;
   background: #fff;
+}
+.menu_desktop{
+  display: none;
 }
 
 h1 {
@@ -99,6 +102,9 @@ h1 {
   align-items: center;
   padding: 16px;
 }
+.desktop_image{
+  display: none;
+}
 
 h2 {
   font-weight: 700;
@@ -129,7 +135,7 @@ h2 {
 .canopy {
   display: flex;
   justify-content: flex-start;
-  margin-left: -28px;
+  margin-left: -3px;
   margin-top: -24px;
 }
 
@@ -349,4 +355,137 @@ textarea {
 .see-more:active {
   color: white;
   background-color: #2230d2;
+}
+
+@media screen and (min-width: 768px) {
+/*---------Header section-----------*/
+ .menu_mobile{
+  display: none;
+ }
+ .logo{
+  margin-left: 5%;
+ }
+ .menu_desktop{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  background: #fff;
+  position: fixed;
+  width: 100%;
+ }
+ .nav_menu{
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin-right: 180px;
+ }
+
+ /*-------Home section---------*/
+ .home{
+  background: url("images/headerbg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: 77px;
+  padding-bottom: 2%;
+  border-bottom-left-radius: 20px;
+ }
+ .home-content{
+  margin-left: 10%;
+  padding-top: 12%;
+ }
+ .lets-connect-message{
+  margin-left: 45px;
+ }
+ .home-content, .my-intro{
+  width: 81%;
+  align-self: flex-start;
+ }
+ .connect-media{
+  margin-left: 1px;
+ }
+ 
+ 
+ 
+  /*--------Work section----------*/
+  .work{
+    background: #E5E5E5;
+  }
+  .flex{
+   display: flex;
+   flex-direction: row;
+   gap: 48px;
+   border-radius: 20px;
+   border: 2px solid #ffff;
+   margin: 0 5%;
+   background-color: #ffff;
+  }
+  .set_top_margin{
+    margin-top: 4%;
+  }
+  .flex_content{
+    margin-top: -174px;
+  }
+  .mobile_image{
+    display: none;
+  }
+  .desktop_image{
+    display: block;
+  }
+  .card-info{
+    margin-top: 20px;
+  }
+  .reverse{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+ 
+  /*-----------About section------------*/
+.about{
+  display: flex;
+  flex-direction: row;
+  width: 76%;
+  margin-left: 12%;
+  gap: 25px;
+}
+.about-content{
+  width: 40%;
+}
+.about-list{
+  width: 60%;
+  gap: 50px;
+}
+.languages{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+.about-content .my-intro{
+  width: 95%;
+  margin-left: 20px;
+  margin-top: -8px;
+}
+
+/*-------------Contact Form------------------*/
+.footer_content{
+  width: 50%;
+  margin: 0 25%;
+  background: none;
+}
+form input,
+textarea {
+  border-radius: 0;
+}
+.submit{
+  align-self: center;
+}
+.contact_section{
+  background-image: url(images/contact_bg.png);
+  background-repeat: no-repeat;
+  background-size: 90% 90%;
+  background-position-y: 34px;
+  background-position-x: 40px;
+}
+
+
 }

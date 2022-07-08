@@ -11,26 +11,43 @@
 </head>
 <body>
     <!--Header section-->
-     <!--Navigation menu-->
-     <header>
-        <div class="logo">
-            <a href="#">Lesapiti</a>
-        </div>
-        <nav>
-            <i class="fa fa-bars"></i>
+    <header>
+    <!--Navigation mobile-->
+        <nav class="menu_mobile">
+            <div class="logo">
+                <a href="#">Lesapiti</a>
+            </div>
+            <div>
+                <i class="fa fa-bars"></i>
+            
+            </div>
         </nav>
-    </header>
+    <!--Navigation desktop-->
+        <nav class="menu_desktop">
+            <div class="logo">
+                <a href="#">Lesapiti</a>
+            </div>
+            <div>
+                <ul class="nav_menu">
+                    <li>Portfolio</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </nav>
+        </header>
+    
     <!--Home section-->
     <section class="home">
         <div class="home-content">
-            <h1>I'm Petro <br> Glad to see <br> you!</h1>
+            <h1>I'm Petro <br> Glad to see you!</h1>
             <p class="my-intro">I'm a software developer! I can help you build a product ,
                  feature or website Look through some of my work and experience!
                   If you like what you see and have a project you need coded, don't 
                   hestiate to contact me.
             </p>
             <br>
-            <p class="lets-connect-message">LET'S CONNECT</p>
+            <h4 class="lets-connect-message">LET'S CONNECT</h4>
             <ul class="connect-media">
                 <li><a href="#"><img src="images/twitter.svg" alt="twitter"></a></li>
                 <li><a href="#"><img src="images/Linkedinicon.svg" alt="linkedin"></a></li>
@@ -43,79 +60,97 @@
     <!--Work section-->
     <section class="work">
         <!---The first card -->
-        <div class="flex">
-            <img src="images/card1-image.png" alt="Image for Card 1">
-            <h2>TONIC</h2>
-           <div class="canopy">
-            <h3>CANOPY</h3>
-            <ul class="canopy-list"><li>BACK&nbsp;END&nbsp;Dev</li><li>2015</li></ul>
-           </div> 
-            <p class="card-info">
-                A daily selection of privately personalized reads; no accounts or sign-ups required.
-            </p>
-            <ul class="list second">
-            <li>html</li>
-            <li>css</li>
-            <li>javascript</li>
-            </ul>
-            <button class="see-more">See Project</button>
+        <div class="flex set_top_margin">
+            <div class="flex_image">
+                <img class="mobile_image" src="images/card1-image.png" alt="Image for Card 1">
+                <img class="desktop_image" src="images/card1.png" alt="Image for desktop card 1">
+            </div>
+            <div class="flex_content">
+                <h2>TONIC</h2>
+                <div class="canopy">
+                    <h3>CANOPY</h3>
+                    <ul class="canopy-list"><li>BACK&nbsp;END&nbsp;Dev</li><li>2015</li></ul>
+                </div> 
+                <p class="card-info">
+                    A daily selection of privately personalized reads; no accounts or sign-ups required.
+                </p>
+                <ul class="list second">
+                <li>html</li>
+                <li>css</li>
+                <li>javascript</li>
+                </ul>
+                <button class="see-more">See Project</button>
+            </div>
         </div>
          <!---The second card -->
-         <div class="flex">
-            <img src="images/card2-image.png" alt="Image for Card 2">
-            <h2>TONIC</h2>
-           <div class="canopy">
-            <h3>CANOPY</h3>
-            <ul class="canopy-list"><li>BACK&nbsp;END&nbsp;Dev</li><li>2015</li></ul>
-           </div> 
-            <p class="card-info">
-                A daily selection of privately personalized reads; no accounts or sign-ups required.
-            </p>
-            <ul class="list second">
-            <li>html</li>
-            <li>css</li>
-            <li>javascript</li>
-            </ul>
-            <button class="see-more">See Project</button>
+        <div class="flex reverse">
+            <div class="flex_image">
+                <img class="mobile_image" src="images/card1-image.png" alt="Image for Card 1">
+                <img class="desktop_image" src="images/card1.png" alt="Image for desktop card 1">
+            </div>
+            <div class="flex_content">
+                <h2>TONIC</h2>
+                <div class="canopy">
+                    <h3>CANOPY</h3>
+                    <ul class="canopy-list"><li>BACK&nbsp;END&nbsp;Dev</li><li>2015</li></ul>
+                </div> 
+                <p class="card-info">
+                    A daily selection of privately personalized reads; no accounts or sign-ups required.
+                </p>
+                <ul class="list second">
+                <li>html</li>
+                <li>css</li>
+                <li>javascript</li>
+                </ul>
+                <button class="see-more">See Project</button>
+            </div>
         </div>
-          <!---The Third card -->
-          <div class="flex">
-            <img src="images/card3-image.png" alt="Image for Card 3">
-            <h2>Multi-Post
-                Stories</h2>
-           <div class="canopy">
-            <h3>CANOPY</h3>
-            <ul class="canopy-list"><li>BACK&nbsp;END&nbsp;Dev</li><li>2015</li></ul>
-           </div> 
-            <p class="card-info">
-                A daily selection of privately personalized reads; no accounts or sign-ups required.
-            </p>
-            <ul class="list second">
-            <li>html</li>
-            <li>css</li>
-            <li>javascript</li>
-            </ul>
-            <button class="see-more">See Project</button>
+          <!---The third card -->
+        <div class="flex">
+            <div class="flex_image">
+                <img class="mobile_image" src="images/card1-image.png" alt="Image for Card 1">
+                <img class="desktop_image" src="images/card1.png" alt="Image for desktop card 1">
+            </div>
+            <div class="flex_content">
+                <h2>TONIC</h2>
+                <div class="canopy">
+                    <h3>CANOPY</h3>
+                    <ul class="canopy-list"><li>BACK&nbsp;END&nbsp;Dev</li><li>2015</li></ul>
+                </div> 
+                <p class="card-info">
+                    A daily selection of privately personalized reads; no accounts or sign-ups required.
+                </p>
+                <ul class="list second">
+                <li>html</li>
+                <li>css</li>
+                <li>javascript</li>
+                </ul>
+                <button class="see-more">See Project</button>
+            </div>
         </div>
-           <!---The Fourth card -->
-           <div class="flex">
-            <img src="images/card4-image.png" alt="Image for Card 4">
-            <h2>TONIC</h2>
-           <div class="canopy">
-            <h3>CANOPY</h3>
-            <ul class="canopy-list"><li>BACK&nbsp;END&nbsp;Dev</li><li>2015</li></ul>
-           </div> 
-            <p class="card-info">
-                A daily selection of privately personalized reads; no accounts or sign-ups required.
-            </p>
-            <ul class="list second">
-            <li>html</li>
-            <li>css</li>
-            <li>javascript</li>
-            </ul>
-            <button class="see-more">See Project</button>
+           <!---The forth card -->
+        <div class="flex reverse">
+            <div class="flex_image">
+                <img class="mobile_image" src="images/card1-image.png" alt="Image for Card 1">
+                <img class="desktop_image" src="images/card1.png" alt="Image for desktop card 1">
+            </div>
+            <div class="flex_content">
+                <h2>TONIC</h2>
+                <div class="canopy">
+                    <h3>CANOPY</h3>
+                    <ul class="canopy-list"><li>BACK&nbsp;END&nbsp;Dev</li><li>2015</li></ul>
+                </div> 
+                <p class="card-info">
+                    A daily selection of privately personalized reads; no accounts or sign-ups required.
+                </p>
+                <ul class="list second">
+                <li>html</li>
+                <li>css</li>
+                <li>javascript</li>
+                </ul>
+                <button class="see-more">See Project</button>
+            </div>
         </div>
-
     </section>
     <!--About section-->
     <section class="about">
