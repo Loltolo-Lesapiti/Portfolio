@@ -125,7 +125,7 @@ h2 {
   list-style: none;
   padding: 0;
   gap: 14px;
-  width: 250px;
+  width: 344px;
   height: 32px;
   margin-top: 0;
   align-self: flex-start;
@@ -536,4 +536,11 @@ textarea {
     background-repeat: no-repeat;
     background-size: contain;
   }
+  .about .lets-connect-message{
+    margin-left: 5px;
+  }
+  .about .connect-media{
+    margin-left: -35px;
+  }
+
 }
