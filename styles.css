@@ -377,8 +377,19 @@ textarea {
  .nav_menu{
   list-style: none;
   display: flex;
-  gap: 20px;
   margin-right: 180px;
+  padding: 10px 12px;
+  gap: 10px;
+ }
+ .nav_menu li{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #344563;
+ }
+ .nav_menu li a{
+  text-decoration: none;
  }
 
  /*-------Home section---------*/
@@ -395,14 +406,15 @@ textarea {
   padding-top: 12%;
  }
  .lets-connect-message{
-  margin-left: 45px;
+  margin-left: 50px;
  }
  .home-content, .my-intro{
   width: 81%;
   align-self: flex-start;
  }
  .connect-media{
-  margin-left: 1px;
+  margin-left: 13px;
+
  }
  
  
@@ -423,6 +435,9 @@ textarea {
   .set_top_margin{
     margin-top: 4%;
   }
+  .set_bottom_margin{
+    margin-bottom: 4%;
+  }
   .flex_content{
     margin-top: -174px;
   }
@@ -439,14 +454,21 @@ textarea {
     display: flex;
     flex-direction: row-reverse;
   }
+  .canopy-list li {
+    margin-top: -2px;
+  }
+  .second li{
+    block-size: fit-content;
+    width: fit-content;
+  }
  
   /*-----------About section------------*/
 .about{
   display: flex;
   flex-direction: row;
-  width: 76%;
-  margin-left: 12%;
+  margin: 0 5%;
   gap: 25px;
+  padding: 50px;
 }
 .about-content{
   width: 40%;
@@ -460,10 +482,13 @@ textarea {
   flex-direction: row;
   gap: 50px;
 }
+.add_padding{
+  padding-top: 87px;
+}
 .about-content .my-intro{
-  width: 95%;
-  margin-left: 20px;
-  margin-top: -8px;
+  width: 100%;
+  margin-left: 1px;
+  margin-top: -3px;
 }
 
 /*-------------Contact Form------------------*/
@@ -482,9 +507,7 @@ textarea {
 .contact_section{
   background-image: url(images/contact_bg.png);
   background-repeat: no-repeat;
-  background-size: 90% 90%;
-  background-position-y: 34px;
-  background-position-x: 40px;
+  background-size: contain;
 }
 
 
