@@ -66,7 +66,7 @@ h1 {
   margin-left: 5%;
   padding-bottom: 100px;
 }
-
+ 
 .home {
   background-image: url("images/mobile.png");
   background-repeat: no-repeat;
@@ -75,7 +75,7 @@ h1 {
   border-bottom-left-radius: 20px;
   margin-bottom: 30px;
   background-color: #fff;
-}
+} 
 
 .lets-connect-message {
   align-self: flex-start;
@@ -92,6 +92,7 @@ h1 {
   display: grid;
   gap: 80px;
   padding: 24px;
+  background-color: #E5E5E5;
 }
 
 .flex {
@@ -394,12 +395,11 @@ textarea {
 
  /*-------Home section---------*/
  .home{
-  background: url("images/headerbg.png");
+  background-image: url("images/headerbg.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position-y: 77px;
-  padding-bottom: 2%;
-  border-bottom-left-radius: 20px;
+  padding-bottom: 2%; 
  }
  .home-content{
   margin-left: 10%;
