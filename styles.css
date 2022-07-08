@@ -385,6 +385,7 @@ textarea {
     padding: 10px 12px;
     gap: 30px;
   }
+
   .nav_menu li a {
     text-decoration: none;
     font-style: normal;
@@ -480,7 +481,7 @@ textarea {
     flex-direction: row;
     gap: 25px;
     padding: 50px;
-    border-top-right-radius:80px;
+    border-top-right-radius: 80px;
   }
 
   .about-content {
@@ -507,6 +508,7 @@ textarea {
     margin-left: 1px;
     margin-top: -3px;
   }
+
   .languages li {
     list-style: none;
     background-color: #f7f7f9;
