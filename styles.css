@@ -536,11 +536,12 @@ textarea {
     background-repeat: no-repeat;
     background-size: contain;
   }
-  .about .lets-connect-message{
+
+  .about .lets-connect-message {
     margin-left: 5px;
   }
-  .about .connect-media{
+
+  .about .connect-media {
     margin-left: -35px;
   }
-
 }
