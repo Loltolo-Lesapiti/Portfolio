@@ -284,7 +284,6 @@ hr {
   background-repeat: no-repeat;
   padding-bottom: 109px;
   border-top-left-radius: 80px;
-  
 }
 
 .footer_content {
@@ -438,9 +437,10 @@ textarea {
     margin: 0 5%;
     background-color: #ffff;
   }
-  .work{
+
+  .work {
     margin: 142px 0;
-    gap: 142px;
+    padding: 0;
   }
 
   .flex_content {
@@ -485,6 +485,7 @@ textarea {
 
   .about-content {
     width: 40%;
+    padding: 0 10%;
   }
 
   .about-list {
@@ -521,6 +522,7 @@ textarea {
   .footer_content {
     width: 50%;
     margin: 0 25%;
+    background: none;
   }
 
   form input,
@@ -535,7 +537,7 @@ textarea {
   .contact_section {
     background-image: url(images/contact_bg.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
   }
 
   .about .lets-connect-message {
