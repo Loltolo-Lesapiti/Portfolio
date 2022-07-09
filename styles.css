@@ -170,9 +170,9 @@ h2 {
   font-size: 17px;
   line-height: 24px;
   align-self: flex-start;
-  -webkit-transition:all 300ms ease-in-out 300ms;
-  -moz-transition:all 300ms ease-in-out 300ms;
-  -o-transition:all 300ms ease-in-out 300ms;
+  -webkit-transition: all 300ms ease-in-out 300ms;
+  -moz-transition: all 300ms ease-in-out 300ms;
+  -o-transition: all 300ms ease-in-out 300ms;
 }
 
 .card-info {
