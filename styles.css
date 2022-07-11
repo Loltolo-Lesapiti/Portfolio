@@ -165,7 +165,14 @@ h2 {
   padding: 12px;
   color: #396df2;
   margin-top: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
   align-self: flex-start;
+  -webkit-transition: all 300ms ease-in-out 300ms;
+  -moz-transition: all 300ms ease-in-out 300ms;
+  -o-transition: all 300ms ease-in-out 300ms;
 }
 
 .card-info {
@@ -367,6 +374,19 @@ textarea {
     margin-left: 5%;
   }
 
+  .logo a {
+    animation: 3s linear 1s infinite running slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      font-size: 100%;
+    }
+    to {
+      font-size: 80%
+    }
+  }
+
   .menu_desktop {
     display: flex;
     justify-content: space-between;
@@ -393,6 +413,11 @@ textarea {
     font-size: 15px;
     line-height: 20px;
     color: #344563;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .nav_menu li a:hover {
+    color: #6070ff;
   }
 
   /* -------Home section--------- */
