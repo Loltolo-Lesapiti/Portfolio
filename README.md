@@ -76,18 +76,6 @@ To get a local copy up and running follow these simple example steps.
 - GitHub: [@githubhandle](https://github.com/Loltolo-Lesapiti)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
-👤 **Davian Beroni**
-
-- GitHub: [dadadon](https://github.com/dadadon)
-- Twitter: [Davian Beroni](https://twitter.com/davianberoni)
-- LinkedIn: [Davian Beroni](https://www.linkedin.com/in/davian-beroni-502351b7/)
-
-👤 **Riya Bulia**
-
-- GitHub: [@RiyaBulia12](https://github.com/RiyaBulia12)
-- Twitter: [@Rbulia_original](https://twitter.com/@rbulia_original)
-- LinkedIn: [Riya-Bulia](https://linkedin.com/in/riya-bulia)
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
