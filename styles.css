@@ -50,6 +50,7 @@ h1 {
   margin-top: -25px;
   font-style: normal;
 }
+
 .my-intro-home {
   font-weight: 400;
   font-size: 16px;
@@ -60,6 +61,7 @@ h1 {
   font-style: normal;
   margin-left: 20px;
 }
+
 .logo a {
   font-weight: 700;
   font-size: 18px;
@@ -94,10 +96,10 @@ h1 {
   color: #7f8cff;
   margin-top: -25px;
 }
-.connect-margin{
-margin-left: 20px;
-}
 
+.connect-margin {
+  margin-left: 20px;
+}
 
 /* Work section css */
 .work {
@@ -116,7 +118,6 @@ margin-left: 20px;
   width: 80%;
   margin: 0 20px;
 }
-
 
 .desktop_image {
   display: none;
@@ -236,6 +237,7 @@ h3 {
   margin-top: -4px;
   margin-left: -42px;
 }
+
 .connect-media-home {
   display: flex;
   list-style: none;
@@ -244,7 +246,6 @@ h3 {
   margin-top: -4px;
   margin-left: -25px;
 }
-
 
 .about-list {
   display: flex;
@@ -255,15 +256,15 @@ h3 {
 }
 
 .languages li {
-    list-style: none;
-    background-color: rgb(247, 247, 249);
-    width: 240px;
-    height: 59px;
-    border-radius: 8px;
-    padding: 9px 7px;
-    align-items: center;
-    margin-bottom: 16px;
-    margin-left: -21px;
+  list-style: none;
+  background-color: rgb(247, 247, 249);
+  width: 240px;
+  height: 59px;
+  border-radius: 8px;
+  padding: 9px 7px;
+  align-items: center;
+  margin-bottom: 16px;
+  margin-left: -21px;
 }
 
 .languages img {
@@ -447,6 +448,7 @@ textarea {
   .lets-connect-message {
     margin-left: 50px;
   }
+
   .my-intro-home {
     width: 81%;
     align-self: flex-start;
@@ -456,6 +458,7 @@ textarea {
   .connect-media-home {
     margin-left: 13px;
   }
+
   .connect-media {
     margin-left: 13px;
   }
@@ -552,10 +555,12 @@ textarea {
     border-radius: 8px;
     padding: 25px;
   }
-  .languages li img{
+
+  .languages li img {
     padding-left: 40px;
   }
-  h5{
+
+  h5 {
     padding-top: 25px;
     margin-right: -35px;
   }
