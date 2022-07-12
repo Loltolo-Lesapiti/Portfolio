@@ -72,7 +72,6 @@ To get a local copy up and running follow these simple example steps.
 ## Author
 
 👤 **Petro Lesapiti**
-
 - GitHub: [@githubhandle](https://github.com/Loltolo-Lesapiti)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
