@@ -23,7 +23,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 5% 50px;
+  padding: 10px 12px 20px;
   background: #fff;
 }
 
@@ -47,12 +47,19 @@ h1 {
   line-height: 24px;
   color: #344563;
   align-self: center;
-  margin-left: 5%;
   margin-top: -25px;
-  margin-right: 39px;
   font-style: normal;
 }
-
+.my-intro-home {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  align-self: center;
+  margin-top: -25px;
+  font-style: normal;
+  margin-left: 20px;
+}
 .logo a {
   font-weight: 700;
   font-size: 18px;
@@ -87,22 +94,29 @@ h1 {
   color: #7f8cff;
   margin-top: -25px;
 }
+.connect-margin{
+margin-left: 20px;
+}
+
 
 /* Work section css */
 .work {
   display: grid;
   gap: 80px;
-  padding: 24px;
+  margin: 80px 0;
 }
 
 .flex {
   display: flex;
   flex-direction: column;
-  background: #fff;
+  background: #ffff;
   border-radius: 16px;
   align-items: center;
-  padding: 16px;
+  padding: 15px;
+  width: 80%;
+  margin: 0 20px;
 }
+
 
 .desktop_image {
   display: none;
@@ -120,14 +134,14 @@ h2 {
 .list {
   display: flex;
   flex-direction: row;
-  align-items: center;
   list-style: none;
   padding: 0;
-  gap: 14px;
-  width: 344px;
-  height: 32px;
+  gap: 5px;
+  height: 46px;
   margin-top: 0;
-  align-self: flex-start;
+  align-self: center;
+  width: 80%;
+  margin-left: 5px;
 }
 
 .first li {
@@ -144,8 +158,8 @@ h2 {
 .second li {
   background: #ebebff;
   border-radius: 8px;
-  width: 53px;
-  height: 24px;
+  width: 30%;
+  height: fit-content;
   padding: 4px 12px;
   margin-top: 0;
   font-style: normal;
@@ -162,10 +176,10 @@ h2 {
   left: 0;
   border: 1px solid #6070ff;
   border-radius: 8px;
-  padding: 12px;
   color: #396df2;
-  margin-top: 0;
+  margin-top: 10px;
   align-self: flex-start;
+  background-color: #ffff;
 }
 
 .card-info {
@@ -222,6 +236,15 @@ h3 {
   margin-top: -4px;
   margin-left: -42px;
 }
+.connect-media-home {
+  display: flex;
+  list-style: none;
+  justify-content: flex-start;
+  gap: 18px;
+  margin-top: -4px;
+  margin-left: -25px;
+}
+
 
 .about-list {
   display: flex;
@@ -232,24 +255,33 @@ h3 {
 }
 
 .languages li {
-  list-style: none;
-  background-color: rgb(247, 247, 249);
-  width: 103px;
-  height: 97px;
-  border-radius: 8px;
-  padding: 9px 12px;
+    list-style: none;
+    background-color: rgb(247, 247, 249);
+    width: 240px;
+    height: 59px;
+    border-radius: 8px;
+    padding: 9px 7px;
+    align-items: center;
+    margin-bottom: 16px;
+    margin-left: -21px;
 }
 
 .languages img {
   height: 50px;
-  margin: 9px;
-  padding: 0;
+  margin-left: -39px;
+  padding-top: 8px;
+  float: left;
+  margin-right: 20px;
 }
 
 h5 {
-  margin-top: -2px;
-  font-size: 15px;
+  font-style: normal;
   font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #253858;
 }
 
 .listItem {
@@ -415,13 +447,15 @@ textarea {
   .lets-connect-message {
     margin-left: 50px;
   }
-
-  .home-content,
-  .my-intro {
+  .my-intro-home {
     width: 81%;
     align-self: flex-start;
+    margin-left: 54px;
   }
 
+  .connect-media-home {
+    margin-left: 13px;
+  }
   .connect-media {
     margin-left: 13px;
   }
@@ -496,7 +530,7 @@ textarea {
   .languages {
     display: flex;
     flex-direction: row;
-    gap: 16px;
+    gap: 49px;
   }
 
   .add_padding {
@@ -516,6 +550,14 @@ textarea {
     width: 98px;
     height: 111px;
     border-radius: 8px;
+    padding: 25px;
+  }
+  .languages li img{
+    padding-left: 40px;
+  }
+  h5{
+    padding-top: 25px;
+    margin-right: -35px;
   }
 
   /* -------------Contact Form------------------ */
