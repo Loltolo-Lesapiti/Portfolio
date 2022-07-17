@@ -17,10 +17,16 @@
             <div class="logo">
                 <a href="#">Lesapiti</a>
             </div>
-            <div>
-                <i class="fa fa-bars"></i>
-            
-            </div>
+                <div class="curtain">
+                    <a href="#" class="close">&times;</a>
+                    <div class="curtain-content">
+                            <a class="menu-link" href="#home">Portfolio</a>
+                            <a class="menu-link" href="#about">About</a>
+                            <a class="menu-link" href="#contact">Contact</a>
+                    </div>
+                </div>
+
+                <i class="fa fa-bars open"></i>
         </nav>
     <!--Navigation desktop-->
         <nav class="menu_desktop">
@@ -29,17 +35,17 @@
             </div>
             <div>
                 <ul class="nav_menu">
-                    <li> <a href="#">Portfolio</a></li>
-                    <li> <a href="#">About</a></li>
-                    <li> <a href="#">Contact</a></li>
+                    <li> <a href="#home">Portfolio</a></li>
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
         </header>
     
     <!--Home section-->
-    <section class="home">
-        <div class="home-content">
+    <section class="home" id="home">
+        <div class="home-content" >
             <h1>I'm Petro <br> Glad to see you!</h1>
             <p class="my-intro-home">I'm a software developer! I can help you build a product ,
                  feature or website Look through some of my work and experience!
@@ -155,7 +161,7 @@
         </div>
     </section>
     <!--About section-->
-    <section class="about">
+    <section class="about" id="about">
         <div class="about-content">
             <h2>About <br> Myself</h2>
             <p class="my-intro">Hello I’m a software developer! I can help you build a product , 
@@ -188,7 +194,7 @@
         </ul>
     </section>
     <!-----Footer section----->
-    <footer class="contact_section">
+    <footer class="contact_section" id="contact">
         <div class="footer_content">
             <h2 class="contact-header">Contact me</h2>
             <p class="contact-message ">
@@ -205,4 +211,5 @@
 
     </footer>
 </body>
+<script src="script.js"></script>
 </html>
