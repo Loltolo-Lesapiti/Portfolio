@@ -75,6 +75,11 @@ To get a local copy up and running follow these simple example steps.
 - GitHub: [@githubhandle](https://github.com/Loltolo-Lesapiti)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
+👤 **Davian Beroni**
+- GitHub: [dadadon](https://github.com/dadadon)
+- Twitter: [Davian Beroni](https://twitter.com/davianberoni)
+- LinkedIn: [Davian Beroni](https://www.linkedin.com/in/davian-beroni-502351b7/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
