@@ -139,7 +139,7 @@ for(let j=0; j<card.list2.length;j++){
 
 //Creating a button
 let cardButton= document.createElement("button");
-cardButton.className="see-more";
+cardButton.className="see-more displayModal";
 cardButton.textContent=card.cardButton;
 ContentDiv.appendChild(cardButton);
 });
@@ -147,11 +147,7 @@ ContentDiv.appendChild(cardButton);
 /**
  * Code for creating PopUp content
  */
-/*
- * 
-/**
- * Code for Displaying the pop-up
- */
+
  cards.forEach((card)=>{
   let modal= document.createElement("div");
   modal.className="modal";
@@ -240,7 +236,7 @@ ContentDiv.appendChild(cardButton);
    /**
     * Javascript to Display the modal
     */
-    let buttons=document.querySelectorAll(".see-more");
+    let buttons=document.querySelectorAll(".displayModal");
     let detailsWindow=document.querySelector(".modal");
     let closeModal=document.querySelector(".closeModal");
     buttons.forEach((button)=>{
