@@ -1,4 +1,3 @@
-
 const openbtn = document.querySelector('.open');
 const closebtn = document.querySelector('.close');
 const menu = document.querySelector('.curtain');

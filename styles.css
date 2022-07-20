@@ -472,7 +472,7 @@ textarea {
   height: auto;
   margin: 28px 16px;
   border-radius: 10px;
-  padding-bottom: 25px; 
+  padding-bottom: 25px;
 }
 
 .list2Btn {
@@ -514,6 +514,7 @@ textarea {
   font-weight: bold;
   margin-right: -90%;
 }
+
 .mobile_image {
   max-width: 100%;
   height: auto;
@@ -577,6 +578,7 @@ textarea {
   .lets-connect-message {
     margin-left: 50px;
   }
+
   .h2formodal {
     margin-top: -40px;
   }
@@ -726,6 +728,7 @@ textarea {
   .about .connect-media {
     margin-left: -35px;
   }
+
   .modal {
     display: none;
     position: fixed;
@@ -750,7 +753,7 @@ textarea {
   }
 
   .list2Btn {
-    margin-left:50px;
+    margin-left: 50px;
   }
 
   .pop {
@@ -782,15 +785,18 @@ textarea {
     align-self: flex-start;
     margin-left: 42px;
   }
-  .enlarge{
+
+  .enlarge {
     width: 100%;
     height: auto;
   }
-  .enl{
+
+  .enl {
     object-fit: cover;
     align-self: center;
     margin-left: 28px;
   }
+
   .closeModal {
     color: #aaa;
     float: right;
