@@ -525,6 +525,13 @@ textarea {
   height: 220px;
 }
 
+.errorMessage {
+  color: #6070ff;
+  font-size: 15px;
+  border-radius: 3px;
+  margin-left: 144px;
+}
+
 @media screen and (min-width: 768px) {
   /* ---------Header section----------- */
   .menu_mobile {
