@@ -519,6 +519,10 @@ textarea {
   max-width: 100%;
   height: auto;
 }
+.enlm{
+  width: 295px;
+  height: 220px;
+}
 
 @media screen and (min-width: 768px) {
   /* ---------Header section----------- */
@@ -750,6 +754,7 @@ textarea {
     width: 50%;
     height: auto;
     border-radius: 20px;
+    align-items: center;
   }
 
   .list2Btn {
@@ -792,9 +797,7 @@ textarea {
   }
 
   .enl {
-    object-fit: cover;
-    align-self: center;
-    margin-left: 28px;
+   margin: 0 8%;
   }
 
   .closeModal {
