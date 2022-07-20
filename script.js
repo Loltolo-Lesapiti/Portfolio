@@ -232,7 +232,7 @@ cards.forEach((card) => {
   btnDiv.appendChild(cardButton1);
 
   const source = document.createElement('a');
-  source.href=card.cardButton2;
+  source.href = card.cardButton2;
   const cardButton2 = document.createElement('button');
   cardButton2.className = 'see-more';
   source.appendChild(cardButton2);
