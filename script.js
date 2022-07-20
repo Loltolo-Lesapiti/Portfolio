@@ -43,9 +43,9 @@ const cards = [
     {
     header2: 'Multi-Post Stories',
     heading3: "FACEBOOK",
-    list1: ['Full&nbsp;Stack&nbsp;Dev', '2015'],
+    list1: ['Full Stack Dev', '2015'],
     paragraph: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    mobileImage:"images/card2-image.png-image.png",
+    mobileImage:"images/card2-image.png",
     desktopImage:"images/card2.png",
     list2: ['html', 'css', 'javaScript'],
     cardButton: "See Project",
@@ -55,9 +55,9 @@ const cards = [
       {
         header2: 'Facebook 360',
         heading3: "FACEBOOK",
-        list1: ['Full&nbsp;Stack&nbsp;Dev', '2015'],
+        list1: ['Full Stack Dev', '2015'],
         paragraph: 'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
-        mobileImage:"images/card3-image.png-image.png",
+        mobileImage:"images/card3-image.png",
         desktopImage:"images/card3.png",
         list2: ['html', 'css', 'javaScript'],
         cardButton: "See Project",
@@ -67,9 +67,9 @@ const cards = [
         {
         header2: 'Uber Navigation',
         heading3: "Uber",
-        list1: ['Full&nbsp;Stack&nbsp;Dev', '2015'],
+        list1: ['Full Stack Dev', '2015'],
         paragraph: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-        mobileImage:"images/card4-image.png-image.png",
+        mobileImage:"images/card4-image.png",
         desktopImage:"images/card4.png",
         list2: ['html', 'css', 'javaScript'],
         cardButton: "See Project",
@@ -95,7 +95,7 @@ ContentDiv.appendChild(heading2);
 heading2.textContent=card.header2;
 
 let canopyDiv=document.createElement("div");
-canopyDiv.className="canopy"
+canopyDiv.className="canopy formodal"
 ContentDiv.appendChild(canopyDiv);
  // Images for mobile and desktop
 let mobileImage=document.createElement("img");
@@ -168,9 +168,10 @@ ContentDiv.appendChild(cardButton);
   let heading2= document.createElement("h2");
   content.appendChild(heading2);
   heading2.textContent=card.header2;
+  heading2.className="h2formodal"
   
   let canopyDiv=document.createElement("div");
-  canopyDiv.className="canopy"
+  canopyDiv.className="canopy canopymodal"
   content.appendChild(canopyDiv);
   
    // Images for mobile and desktop
@@ -200,7 +201,7 @@ ContentDiv.appendChild(cardButton);
   
   //Creating lists and list items.
   let list1=document.createElement("ul");
-  list1.className="canopy-list";
+  list1.className="canopy-list ul1formodal";
   canopyDiv.appendChild(list1);
   for(let j=0; j<card.list1.length;j++){
   let list1Elements= document.createElement("li");
@@ -212,7 +213,7 @@ ContentDiv.appendChild(cardButton);
   list2BTNDiv.className="list2Btn";
   ContentDiv.appendChild(list2BTNDiv);
   let list2=document.createElement("ul");
-  list2.className="list second"
+  list2.className="list second ulformodal"
   list2BTNDiv.appendChild(list2);
   for(let j=0; j<card.list2.length;j++){
       let list2Elements= document.createElement("li");

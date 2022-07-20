@@ -448,6 +448,63 @@ textarea {
   color: white;
   background-color: #2230d2;
 }
+/** Modal css **/
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: hidden;
+  background-color: #C1C7D0;
+}
+.modal-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffff;
+  position: absolute;
+  width: 343px;
+  height: 100vh;
+  top: 34px;
+  gap: 6px;
+  margin: 0 16px;
+  padding-bottom: 20px;
+}
+.list2Btn{
+display: flex;
+flex-direction: column;
+}
+.ulformodal{
+  margin-left: -34px;
+}
+.ul1formodal{
+  margin-left: 13px;
+}
+.btnDiv{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-left: 19px;
+}
+.h2formodal{
+  margin-left: 34px;
+}
+
+.popParagrah{
+  width: 80%;
+  margin-left: 23px;
+} 
+/* The Close Button */
+.closeModal {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+margin-right: -90%;
+}
 
 @media screen and (min-width: 768px) {
   /* ---------Header section----------- */
@@ -670,10 +727,12 @@ textarea {
     .modal-content{
       display: flex;
       flex-direction: column;
-      align-items: center;
       background-color: #ffff;
       position: absolute;
-      margin: 77px 142px;
+      margin: 0 142px;
+      width: 80%;
+      height: 100vh;
+      padding-bottom: 165px;
     }
     .list2Btn{
      left: 30px;
@@ -686,10 +745,20 @@ textarea {
       display: flex;
       gap: 20px;
     }
-    .popParagrah p{
+    .popParagrah{
       width: 80%;
       margin-left: 30px;
       top: 0;
+    }
+    .ulformodal{
+      margin-left: -34px;
+    }
+    .ul1formodal{
+      margin-left: 13px;
+    }
+    .canopymodal{
+      align-self: flex-start;
+      margin-left: 42px;
     }
    
     /* The Close Button */
