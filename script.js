@@ -211,15 +211,15 @@ buttons.forEach((button) => {
   };
 });
 
-let form= document.querySelector(".form-container");
-let email= form.querySelector("#email");
+const form = document.querySelector('.form-container');
+const email = form.querySelector('#email');
 
-form.addEventListener("submit",(e)=>{
-  if(email.value!==email.value.toLowerCase()){
+form.addEventListener('submit', (e) => {
+  if (email.value !== email.value.toLowerCase()) {
     e.preventDefault();
-    document.querySelector(".errorMessage").style.color="red";
+    document.querySelector('.errorMessage').style.color = 'red';
     setTimeout(() => {
-    document.querySelector(".errorMessage").style.color="#6070ff";
+      document.querySelector('.errorMessage').style.color = '#6070ff';
     }, 2500);
   }
 });
