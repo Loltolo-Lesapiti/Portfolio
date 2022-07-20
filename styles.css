@@ -217,7 +217,7 @@ h2 {
 .second li {
   background: #ebebff;
   border-radius: 8px;
-  width: 30%;
+  width: max-content;
   height: fit-content;
   padding: 4px 12px;
   margin-top: 0;
