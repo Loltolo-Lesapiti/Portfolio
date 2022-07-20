@@ -29,6 +29,7 @@ Code for Dinamically displaying the cards.
 
 const cards = [
   {
+    class:"flex",
     header2: 'Tonic',
     heading3: 'CANOPY',
     list1: ['Back End Dev', '2015'],
@@ -37,10 +38,11 @@ const cards = [
     desktopImage: 'images/card1.png',
     list2: ['html', 'css', 'javaScript'],
     cardButton: 'See Project',
-    cardButton1: 'See Live',
-    cardButton2: 'See More',
+    cardButton1: 'https://loltolo-lesapiti.github.io/',
+    cardButton2: 'https://github.com/Loltolo-Lesapiti/loltolo-lesapiti.github.io',
   },
   {
+    class:"flex reverse",
     header2: 'Multi-Post Stories',
     heading3: 'FACEBOOK',
     list1: ['Full Stack Dev', '2015'],
@@ -49,10 +51,11 @@ const cards = [
     desktopImage: 'images/card2.png',
     list2: ['html', 'css', 'javaScript'],
     cardButton: 'See Project',
-    cardButton1: 'See Live',
-    cardButton2: 'See More',
+    cardButton1: 'https://loltolo-lesapiti.github.io/',
+    cardButton2: 'https://github.com/Loltolo-Lesapiti/loltolo-lesapiti.github.io',
   },
   {
+    class:"flex",
     header2: 'Facebook 360',
     heading3: 'FACEBOOK',
     list1: ['Full Stack Dev', '2015'],
@@ -61,10 +64,11 @@ const cards = [
     desktopImage: 'images/card3.png',
     list2: ['html', 'css', 'javaScript'],
     cardButton: 'See Project',
-    cardButton1: 'See Live',
-    cardButton2: 'See More',
+    cardButton1: 'https://loltolo-lesapiti.github.io/',
+    cardButton2: 'https://github.com/Loltolo-Lesapiti/loltolo-lesapiti.github.io',
   },
   {
+    class:"flex reverse",
     header2: 'Uber Navigation',
     heading3: 'Uber',
     list1: ['Full Stack Dev', '2015'],
@@ -73,15 +77,15 @@ const cards = [
     desktopImage: 'images/card4.png',
     list2: ['html', 'css', 'javaScript'],
     cardButton: 'See Project',
-    cardButton1: 'See Live',
-    cardButton2: 'See More',
+    cardButton1: 'https://loltolo-lesapiti.github.io/',
+    cardButton2: 'https://github.com/Loltolo-Lesapiti/loltolo-lesapiti.github.io',
   },
 ];
 
 // Creating a card div
 cards.forEach((card) => {
   const cardDiv = document.createElement('div');
-  cardDiv.className = 'flex';
+  cardDiv.className = card.class;
   document.querySelector('.work').appendChild(cardDiv);
   const imageDiv = document.createElement('div');
   imageDiv.className = 'flex_image';
@@ -219,14 +223,18 @@ cards.forEach((card) => {
   btnDiv.className = 'btnDiv';
   list2BTNDiv.appendChild(btnDiv);
   // Creating a button
+  let liveLink= document.createElement("a");
+  liveLink.href=card.cardButton1
   const cardButton1 = document.createElement('button');
   cardButton1.className = 'see-more';
-  cardButton1.textContent = card.cardButton1;
+  liveLink.appendChild(cardButton1)
+  cardButton1.textContent = "See Live";
   btnDiv.appendChild(cardButton1);
 
   const cardButton2 = document.createElement('button');
   cardButton2.className = 'see-more';
-  cardButton2.textContent = card.cardButton2;
+  cardButton2.appendChild(source);
+  cardButton2.textContent = "See Source";
   btnDiv.appendChild(cardButton2);
 });
 
