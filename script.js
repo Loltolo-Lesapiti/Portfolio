@@ -29,7 +29,7 @@ Code for Dinamically displaying the cards.
 
 const cards = [
   {
-    class:"flex",
+    class: 'flex',
     header2: 'Tonic',
     heading3: 'CANOPY',
     list1: ['Back End Dev', '2015'],
@@ -42,7 +42,7 @@ const cards = [
     cardButton2: 'https://github.com/Loltolo-Lesapiti/loltolo-lesapiti.github.io',
   },
   {
-    class:"flex reverse",
+    class: 'flex reverse',
     header2: 'Multi-Post Stories',
     heading3: 'FACEBOOK',
     list1: ['Full Stack Dev', '2015'],
@@ -55,7 +55,7 @@ const cards = [
     cardButton2: 'https://github.com/Loltolo-Lesapiti/loltolo-lesapiti.github.io',
   },
   {
-    class:"flex",
+    class: 'flex',
     header2: 'Facebook 360',
     heading3: 'FACEBOOK',
     list1: ['Full Stack Dev', '2015'],
@@ -68,7 +68,7 @@ const cards = [
     cardButton2: 'https://github.com/Loltolo-Lesapiti/loltolo-lesapiti.github.io',
   },
   {
-    class:"flex reverse",
+    class: 'flex reverse',
     header2: 'Uber Navigation',
     heading3: 'Uber',
     list1: ['Full Stack Dev', '2015'],
@@ -223,18 +223,20 @@ cards.forEach((card) => {
   btnDiv.className = 'btnDiv';
   list2BTNDiv.appendChild(btnDiv);
   // Creating a button
-  let liveLink= document.createElement("a");
-  liveLink.href=card.cardButton1
+  const liveLink = document.createElement('a');
+  liveLink.href = card.cardButton1;
   const cardButton1 = document.createElement('button');
   cardButton1.className = 'see-more';
-  liveLink.appendChild(cardButton1)
-  cardButton1.textContent = "See Live";
+  liveLink.appendChild(cardButton1);
+  cardButton1.textContent = 'See Live';
   btnDiv.appendChild(cardButton1);
 
+  const source = document.createElement('a');
+  source.href=card.cardButton2;
   const cardButton2 = document.createElement('button');
   cardButton2.className = 'see-more';
-  cardButton2.appendChild(source);
-  cardButton2.textContent = "See Source";
+  source.appendChild(cardButton2);
+  cardButton2.textContent = 'See Source';
   btnDiv.appendChild(cardButton2);
 });
 
