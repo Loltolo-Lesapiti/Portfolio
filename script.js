@@ -222,7 +222,7 @@ form.addEventListener('submit', (e) => {
       document.querySelector('.errorMessage').style.color = '#6070ff';
     }, 2500);
   }
-  localStor();
+  localStore();
 });
 
 // Local storage.
@@ -234,7 +234,7 @@ const contactInfo={
   email: "",
   message:""
 }
-function localStor(){
+function localStore(){
   contactInfo.name=first_name.value;
   contactInfo.message=message.value;
   contactInfo.email=email.value;
