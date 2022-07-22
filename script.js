@@ -119,6 +119,7 @@ cards.forEach((card) => {
   cardButton.textContent = card.cardButton;
   ContentDiv.appendChild(cardButton);
 });
+
 cards.forEach((card) => {
   const modal = document.createElement('div');
   modal.className = 'modal';
@@ -193,7 +194,8 @@ cards.forEach((card) => {
   source.appendChild(cardButton2);
   cardButton2.innerHTML = 'See Source';
   btnDiv.appendChild(source);
-});
+
+// Display modal
 const buttons = document.querySelectorAll('.displayModal');
 const detailsWindow = document.querySelector('.modal');
 const closeModal = document.querySelector('.closeModal');
@@ -211,6 +213,10 @@ buttons.forEach((button) => {
   };
 });
 
+});
+
+
+
 const form = document.querySelector('.form-container');
 const email = form.querySelector('#email');
 
@@ -222,7 +228,7 @@ form.addEventListener('submit', (e) => {
       document.querySelector('.errorMessage').style.color = '#6070ff';
     }, 2500);
   }
-  localStore();
+  storeUserInput();
 });
 
 // Local storage.
@@ -234,7 +240,7 @@ const contactInfo={
   email: "",
   message:""
 }
-function localStore(){
+function storeUserInput(){
   contactInfo.name=first_name.value;
   contactInfo.message=message.value;
   contactInfo.email=email.value;
