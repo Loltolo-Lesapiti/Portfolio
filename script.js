@@ -222,4 +222,31 @@ form.addEventListener('submit', (e) => {
       document.querySelector('.errorMessage').style.color = '#6070ff';
     }, 2500);
   }
+  localStor();
 });
+
+// Local storage.
+const first_name= document.querySelector("#name");
+const message= document.querySelector("#textarea");
+
+const contactInfo={
+  name: "",
+  email: "",
+  message:""
+}
+function localStor(){
+  contactInfo.name=first_name.value;
+  contactInfo.message=message.value;
+  contactInfo.email=email.value;
+if(window.localStorage.getItem(contactInfo)===null){
+  localStorage.setItem("contactInfo",JSON.stringify(contactInfo));
+}else{
+  contactInfo.name=JSON.parse(window.localStorage.getItem("contactInfo")).name.value;
+  contactInfo.email=JSON.parse(window.localStorage.getItem("contactInfo")).email.value;
+  contactInfo.message=JSON.parse(window.localStorage.getItem("contactInfo")).message.value;
+}
+ }
+
+
+
+
