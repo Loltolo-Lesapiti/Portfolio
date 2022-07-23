@@ -118,9 +118,8 @@ cards.forEach((card) => {
   cardButton.className = 'see-more displayModal';
   cardButton.textContent = card.cardButton;
   ContentDiv.appendChild(cardButton);
-});
 
-cards.forEach((card) => {
+  // Modal
   const modal = document.createElement('div');
   modal.className = 'modal';
   document.querySelector('.work').appendChild(modal);
@@ -131,61 +130,61 @@ cards.forEach((card) => {
   closebtn.innerHTML = '&times;';
   content.appendChild(closebtn);
   closebtn.className = 'closeModal';
-  const heading2 = document.createElement('h2');
-  content.appendChild(heading2);
-  heading2.textContent = card.header2;
-  heading2.className = 'h2formodal';
-  const canopyDiv = document.createElement('div');
-  canopyDiv.className = 'canopy canopymodal';
-  content.appendChild(canopyDiv);
-  const mobileImage = document.createElement('img');
-  mobileImage.className = 'mobile_image enlm';
-  mobileImage.src = card.desktopImage;
-  content.appendChild(mobileImage);
-  const DesktopImage = document.createElement('img');
-  DesktopImage.className = 'desktop_image  enl';
-  DesktopImage.src = card.desktopImage;
-  content.appendChild(DesktopImage);
-  const ContentDiv = document.createElement('div');
-  ContentDiv.className = 'flex_content pop';
-  content.appendChild(ContentDiv);
-  const heading3 = document.createElement('h3');
-  canopyDiv.appendChild(heading3);
-  heading3.className = 'modalHeader';
-  heading3.textContent = card.heading3;
-  const paragraph = document.createElement('p');
-  paragraph.className = 'card-info popParagrah';
-  ContentDiv.appendChild(paragraph);
-  paragraph.textContent = card.paragraph;
-  const list1 = document.createElement('ul');
-  list1.className = 'canopy-list ul1formodal';
-  canopyDiv.appendChild(list1);
+  const heading2m = document.createElement('h2');
+  content.appendChild(heading2m);
+  heading2m.textContent = card.header2;
+  heading2m.className = 'h2formodal';
+  const canopyDivm = document.createElement('div');
+  canopyDivm.className = 'canopy canopymodal';
+  content.appendChild(canopyDivm);
+  const mobileImagem = document.createElement('img');
+  mobileImagem.className = 'mobile_image enlm';
+  mobileImagem.src = card.desktopImage;
+  content.appendChild(mobileImagem);
+  const DesktopImagem = document.createElement('img');
+  DesktopImagem.className = 'desktop_image  enl';
+  DesktopImagem.src = card.desktopImage;
+  content.appendChild(DesktopImagem);
+  const ContentDivm = document.createElement('div');
+  ContentDivm.className = 'flex_content pop';
+  content.appendChild(ContentDivm);
+  const heading3m = document.createElement('h3');
+  canopyDivm.appendChild(heading3m);
+  heading3m.className = 'modalHeader';
+  heading3m.textContent = card.heading3;
+  const paragraphm = document.createElement('p');
+  paragraphm.className = 'card-info popParagrah';
+  ContentDivm.appendChild(paragraphm);
+  paragraphm.textContent = card.paragraph;
+  const list1m = document.createElement('ul');
+  list1m.className = 'canopy-list ul1formodal';
+  canopyDivm.appendChild(list1m);
   for (let j = 0; j < card.list1.length; j++) {
     const list1Elements = document.createElement('li');
     list1Elements.textContent = card.list1[j];
-    list1.appendChild(list1Elements);
+    list1m.appendChild(list1Elements);
   }
-  const list2BTNDiv = document.createElement('div');
-  list2BTNDiv.className = 'list2Btn';
-  ContentDiv.appendChild(list2BTNDiv);
-  const list2 = document.createElement('ul');
-  list2.className = 'list second ulformodal';
-  list2BTNDiv.appendChild(list2);
+  const list2BTNDivm = document.createElement('div');
+  list2BTNDivm.className = 'list2Btn';
+  ContentDivm.appendChild(list2BTNDivm);
+  const list2m = document.createElement('ul');
+  list2m.className = 'list second ulformodal';
+  list2BTNDivm.appendChild(list2m);
   for (let j = 0; j < card.list2.length; j++) {
     const list2Elements = document.createElement('li');
     list2Elements.textContent = card.list2[j];
-    list2.appendChild(list2Elements);
+    list2m.appendChild(list2Elements);
   }
-  const btnDiv = document.createElement('div');
-  btnDiv.className = 'btnDiv';
-  list2BTNDiv.appendChild(btnDiv);
+  const btnDivm = document.createElement('div');
+  btnDivm.className = 'btnDiv';
+  list2BTNDivm.appendChild(btnDivm);
   const liveLink = document.createElement('a');
   liveLink.href = card.cardButton1;
   const cardButton1 = document.createElement('button');
   cardButton1.className = 'see-more';
   liveLink.appendChild(cardButton1);
   cardButton1.textContent = 'See Live';
-  btnDiv.appendChild(liveLink);
+  btnDivm.appendChild(liveLink);
 
   const source = document.createElement('a');
   source.href = card.cardButton2;
@@ -193,29 +192,18 @@ cards.forEach((card) => {
   cardButton2.className = 'see-more';
   source.appendChild(cardButton2);
   cardButton2.innerHTML = 'See Source';
-  btnDiv.appendChild(source);
+  btnDivm.appendChild(source);
 
-// Display modal
-const buttons = document.querySelectorAll('.displayModal');
-const detailsWindow = document.querySelector('.modal');
-const closeModal = document.querySelector('.closeModal');
-buttons.forEach((button) => {
-  button.addEventListener('click', () => {
-    detailsWindow.style.display = 'block';
-  });
-  closeModal.addEventListener('click', () => {
-    detailsWindow.style.display = 'none';
-  });
-  window.onclick = function (event) {
-    if (event.target === detailsWindow) {
-      detailsWindow.style.display = 'none';
-    }
-  };
-});
+  //Button action.
+  cardButton.addEventListener("click",()=>{
+    modal.style.display="block";
+  })
 
-});
+  closebtn.addEventListener("click",()=>{
+    modal.style.display="none";
+  })
 
-
+  //Form validation.
 
 const form = document.querySelector('.form-container');
 const email = form.querySelector('#email');
