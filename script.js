@@ -17,7 +17,7 @@ links.forEach((link) => {
     document.body.style.overflow = 'visible';
   });
 });
-/*const */cards = [
+ const cards = [
   {
     class: 'flex',
     header2: 'Tonic',
