@@ -14,7 +14,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://loltolo-lesapiti.github.io/)
+[Live Demo Link](https://elaborate-kangaroo-8c9617.netlify.app/)
 
 ## Getting Started
 
