@@ -272,6 +272,10 @@ h3 {
   width: 192px;
   margin-left: 0;
 }
+.resume a{
+  text-decoration: none;
+  color: unset;
+}
 
 .about {
   display: grid;
@@ -626,9 +630,9 @@ textarea {
     padding: 0;
   }
 
-  .flex_content {
+  /* .flex_content {
     margin-top: -174px;
-  }
+  } */
 
   .mobile_image {
     display: none;
@@ -636,6 +640,7 @@ textarea {
 
   .desktop_image {
     display: block;
+    max-width: 100%;
   }
 
   .card-info {
