@@ -67,159 +67,210 @@ const cards = [
     cardButton2: 'https://github.com/Loltolo-Lesapiti/Taas-Real-Estate',
   },
 ];
-cards.forEach((card) => {
+cards.forEach((card, index) => {
   const cardDiv = document.createElement('div');
   cardDiv.className = card.class;
   document.querySelector('.work').appendChild(cardDiv);
+
   const imageDiv = document.createElement('div');
   imageDiv.className = 'flex_image';
   cardDiv.appendChild(imageDiv);
+
   const ContentDiv = document.createElement('div');
   ContentDiv.className = 'flex_content';
   cardDiv.appendChild(ContentDiv);
+
   const heading2 = document.createElement('h2');
   ContentDiv.appendChild(heading2);
   heading2.textContent = card.header2;
+
   const canopyDiv = document.createElement('div');
   canopyDiv.className = 'canopy formodal';
   ContentDiv.appendChild(canopyDiv);
+
   const mobileImage = document.createElement('img');
   mobileImage.className = 'mobile_image';
   mobileImage.src = card.desktopImage;
   imageDiv.appendChild(mobileImage);
+
   const DesktopImage = document.createElement('img');
   DesktopImage.className = 'desktop_image';
   DesktopImage.src = card.desktopImage;
   imageDiv.appendChild(DesktopImage);
+
   const heading3 = document.createElement('h3');
   canopyDiv.appendChild(heading3);
   heading3.textContent = card.heading3;
+
   const paragraph = document.createElement('p');
   paragraph.className = 'card-info';
   ContentDiv.appendChild(paragraph);
   paragraph.textContent = card.paragraph;
+
   const list1 = document.createElement('ul');
   list1.className = 'canopy-list';
   canopyDiv.appendChild(list1);
+
   for (let j = 0; j < card.list1.length; j++) {
     const list1Elements = document.createElement('li');
     list1Elements.textContent = card.list1[j];
     list1.appendChild(list1Elements);
   }
+
   const list2 = document.createElement('ul');
   list2.className = 'list second';
   ContentDiv.appendChild(list2);
+
   for (let j = 0; j < card.list2.length; j++) {
     const list2Elements = document.createElement('li');
     list2Elements.textContent = card.list2[j];
     list2.appendChild(list2Elements);
   }
+
   const cardButton = document.createElement('button');
   cardButton.className = 'see-more displayModal';
   cardButton.textContent = card.cardButton;
   ContentDiv.appendChild(cardButton);
+
+  // Add a custom attribute to store the index of the card
+  cardButton.setAttribute('data-index', index);
 });
+
 cards.forEach((card) => {
   const modal = document.createElement('div');
   modal.className = 'modal';
   document.querySelector('.work').appendChild(modal);
+
   const content = document.createElement('div');
   content.className = 'modal-content';
   modal.appendChild(content);
+
   const closebtn = document.createElement('span');
   closebtn.innerHTML = '&times;';
   content.appendChild(closebtn);
   closebtn.className = 'closeModal';
+
   const heading2 = document.createElement('h2');
   content.appendChild(heading2);
   heading2.textContent = card.header2;
   heading2.className = 'h2formodal';
+
   const canopyDiv = document.createElement('div');
   canopyDiv.className = 'canopy canopymodal';
   content.appendChild(canopyDiv);
+
   const mobileImage = document.createElement('img');
   mobileImage.className = 'mobile_image enlm';
   mobileImage.src = card.desktopImage;
   content.appendChild(mobileImage);
+
   const DesktopImage = document.createElement('img');
-  DesktopImage.className = 'desktop_image  enl';
+  DesktopImage.className = 'desktop_image enl';
   DesktopImage.src = card.desktopImage;
   content.appendChild(DesktopImage);
+
   const ContentDiv = document.createElement('div');
   ContentDiv.className = 'flex_content pop';
-  content.appendChild(ContentDiv);
-  const heading3 = document.createElement('h3');
-  canopyDiv.appendChild(heading3);
-  heading3.className = 'modalHeader';
-  heading3.textContent = card.heading3;
-  const paragraph = document.createElement('p');
-  paragraph.className = 'card-info popParagrah';
-  ContentDiv.appendChild(paragraph);
-  paragraph.textContent = card.paragraph;
-  const list1 = document.createElement('ul');
-  list1.className = 'canopy-list ul1formodal';
-  canopyDiv.appendChild(list1);
-  for (let j = 0; j < card.list1.length; j++) {
-    const list1Elements = document.createElement('li');
-    list1Elements.textContent = card.list1[j];
-    list1.appendChild(list1Elements);
-  }
-  const list2BTNDiv = document.createElement('div');
-  list2BTNDiv.className = 'list2Btn';
-  ContentDiv.appendChild(list2BTNDiv);
-  const list2 = document.createElement('ul');
-  list2.className = 'list second ulformodal';
-  list2BTNDiv.appendChild(list2);
-  for (let j = 0; j < card.list2.length; j++) {
-    const list2Elements = document.createElement('li');
-    list2Elements.textContent = card.list2[j];
-    list2.appendChild(list2Elements);
-  }
-  const btnDiv = document.createElement('div');
-  btnDiv.className = 'btnDiv';
-  list2BTNDiv.appendChild(btnDiv);
-  const liveLink = document.createElement('a');
-  liveLink.href = card.cardButton1;
-  const cardButton1 = document.createElement('button');
-  cardButton1.className = 'see-more';
-  liveLink.appendChild(cardButton1);
-  cardButton1.textContent = 'See Live';
-  btnDiv.appendChild(liveLink);
+ content.appendChild(ContentDiv);
 
-  const source = document.createElement('a');
-  source.href = card.cardButton2;
-  const cardButton2 = document.createElement('button');
-  cardButton2.className = 'see-more';
-  source.appendChild(cardButton2);
-  cardButton2.innerHTML = 'See Source';
-  btnDiv.appendChild(source);
+const heading3 = document.createElement('h3');
+canopyDiv.appendChild(heading3);
+heading3.className = 'modalHeader';
+heading3.textContent = card.heading3;
+
+const paragraph = document.createElement('p');
+paragraph.className = 'card-info popParagrah';
+ContentDiv.appendChild(paragraph);
+paragraph.textContent = card.paragraph;
+
+const list1 = document.createElement('ul');
+list1.className = 'canopy-list ul1formodal';
+canopyDiv.appendChild(list1);
+
+for (let j = 0; j < card.list1.length; j++) {
+const list1Elements = document.createElement('li');
+list1Elements.textContent = card.list1[j];
+list1.appendChild(list1Elements);
+}
+
+const list2BTNDiv = document.createElement('div');
+list2BTNDiv.className = 'list2Btn';
+ContentDiv.appendChild(list2BTNDiv);
+
+const list2 = document.createElement('ul');
+list2.className = 'list second ulformodal';
+list2BTNDiv.appendChild(list2);
+
+for (let j = 0; j < card.list2.length; j++) {
+const list2Elements = document.createElement('li');
+list2Elements.textContent = card.list2[j];
+list2.appendChild(list2Elements);
+}
+
+const btnDiv = document.createElement('div');
+btnDiv.className = 'btnDiv';
+list2BTNDiv.appendChild(btnDiv);
+
+const liveLink = document.createElement('a');
+liveLink.href = card.cardButton1;
+
+const cardButton1 = document.createElement('button');
+cardButton1.className = 'see-more';
+liveLink.appendChild(cardButton1);
+cardButton1.textContent = 'See Live';
+btnDiv.appendChild(liveLink);
+
+const source = document.createElement('a');
+source.href = card.cardButton2;
+
+const cardButton2 = document.createElement('button');
+cardButton2.className = 'see-more';
+source.appendChild(cardButton2);
+cardButton2.innerHTML = 'See Source';
+btnDiv.appendChild(source);
 });
+
 const buttons = document.querySelectorAll('.displayModal');
 const detailsWindow = document.querySelector('.modal');
-const closeModal = document.querySelector('.closeModal');
+const closeModal = document.querySelectorAll('.closeModal');
+
 buttons.forEach((button) => {
-  button.addEventListener('click', () => {
-    detailsWindow.style.display = 'block';
-  });
-  closeModal.addEventListener('click', () => {
-    detailsWindow.style.display = 'none';
-  });
-  window.onclick = function (event) {
-    if (event.target === detailsWindow) {
-      detailsWindow.style.display = 'none';
-    }
-  };
+button.addEventListener('click', () => {
+const index = button.getAttribute('data-index');
+const modals = document.querySelectorAll('.modal');
+const modal = modals[index];
+modal.style.display = 'block';
 });
+});
+
+closeModal.forEach((closeBtn) => {
+  closeBtn.addEventListener('click', () => {
+    const modal = closeBtn.closest('.modal');
+    modal.style.display = 'none';
+  });
+});
+
+window.onclick = function (event) {
+  if (event.target.classList.contains('modal')) {
+    event.target.style.display = 'none';
+  }
+};
 
 const form = document.querySelector('.form-container');
 const email = form.querySelector('#email');
 
 form.addEventListener('submit', (e) => {
-  if (email.value !== email.value.toLowerCase()) {
-    e.preventDefault();
-    document.querySelector('.errorMessage').style.color = 'red';
-    setTimeout(() => {
-      document.querySelector('.errorMessage').style.color = '#6070ff';
-    }, 2500);
-  }
+if (email.value !== email.value.toLowerCase()) {
+e.preventDefault();
+document.querySelector('.errorMessage').style.color = 'red';
+setTimeout(() => {
+document.querySelector('.errorMessage').style.color = '#6070ff';
+}, 2500);
+}
 });
+
+
+
+
+
+
