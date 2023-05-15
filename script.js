@@ -269,6 +269,16 @@ document.querySelector('.errorMessage').style.color = '#6070ff';
 }
 });
 
+// JavaScript to handle dropdown toggle
+const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+dropdownToggles.forEach(toggle => {
+    toggle.addEventListener('click', function () {
+        this.classList.toggle('open');
+        const content = this.nextElementSibling;
+        content.style.display = content.style.display === 'none' ? 'block' : 'none';
+    });
+});
+
 
 
 
