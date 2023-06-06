@@ -175,6 +175,19 @@ h1 {
   padding: 15px;
   width: 80%;
   margin: 0 20px;
+  border: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+.flex:hover{
+  border-color: #6070ff;
+}
+
+.flex_image{
+  transition: transform 0.3s ease;
+}
+
+.flex_image:hover {
+  transform: scale(1.05);
 }
 
 .desktop_image {
@@ -573,6 +586,9 @@ textarea {
     line-height: 20px;
     color: #344563;
   }
+  .nav_menu li a.active {
+    text-decoration: underline;
+  }
 
   /* -------Home section--------- */
   .home {
@@ -588,7 +604,7 @@ textarea {
 
   .home-content {
     margin-left: 10%;
-    padding-top: 16%;
+    padding-top: 12%;
   }
 
   .lets-connect-message {
@@ -673,7 +689,7 @@ textarea {
 
   .about-content {
     width: 40%;
-    padding: 0 10%;
+    /* padding: 0 10%; */
   }
 
   .about-list {
@@ -819,5 +835,6 @@ textarea {
     font-size: 28px;
     font-weight: bold;
     margin-right: -90%;
+    cursor: pointer;
   }
 }
