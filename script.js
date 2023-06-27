@@ -32,27 +32,27 @@ const cards = [
   },
   {
     class: 'flex reverse',
-    header2: 'School Library',
+    header2: 'Virtual Chef',
     heading3: 'Petro',
     list1: ['Full Stack Dev', '2022'],
-    paragraph: 'This is a console application that faciliates user interaction in managing the library books. It also makes use of file i/o in storing and retriving data on request and launch.',
-    desktopImage: './images/Books.png',
-    list2: ['html', 'css', 'ruby'],
+    paragraph: 'An application that showcases an array of authentic Jamaican dishes. Explores the vibrant culinary culture, engages with fellow users through comments, and allows users to reserve their favorite dish recipe with ease.',
+    desktopImage: './images/Vitual-cheff.PNG',
+    list2: ['html', 'css', 'JavaScript', 'Webpack'],
     cardButton: 'See Project',
-    cardButton1: 'https://loltolo-lesapiti.github.io/',
-    cardButton2: 'https://github.com/Loltolo-Lesapiti/OOP-school-library',
+    cardButton1: 'https://loltolo-lesapiti.github.io/Virtual-cheff/dist/',
+    cardButton2: 'https://github.com/Loltolo-Lesapiti/Virtual-cheff',
   },
   {
     class: 'flex',
-    header2: 'Space Travels Hub',
+    header2: 'Budget App',
     heading3: 'Petro',
     list1: ['Full Stack Dev', '2022'],
-    paragraph: 'This application displays list of Rockets, Missions, and the user can reserve any rockets or become member of mission which is listed in the My Profile section.  It uses real live data from the SpaceX API.',
+    paragraph: 'Your user-friendly budgeting app with secure authentication, intuitive interface, effortless budget item addition and categorization, real-time tracking of spending habits, and seamless recording of transactions for effective money management.',
     desktopImage: './images/space_travel.png',
-    list2: ['html', 'css', 'react'],
+    list2: ['Ruby On Rails', 'PostgreSQL', 'Bootstrap','Rubocop'],
     cardButton: 'See Project',
-    cardButton1: 'https://loltolo-lesapiti.github.io/',
-    cardButton2: 'https://github.com/Loltolo-Lesapiti/space-travelers--hub',
+    cardButton1: 'https://budgetaas.onrender.com/',
+    cardButton2: 'https://github.com/Loltolo-Lesapiti/Budget-App',
   },
   {
     class: 'flex reverse',
@@ -213,6 +213,7 @@ list2BTNDiv.appendChild(btnDiv);
 
 const liveLink = document.createElement('a');
 liveLink.href = card.cardButton1;
+liveLink.target = '_blank';
 
 const cardButton1 = document.createElement('button');
 cardButton1.className = 'see-more';
@@ -222,6 +223,7 @@ btnDiv.appendChild(liveLink);
 
 const source = document.createElement('a');
 source.href = card.cardButton2;
+source.target = '_blank';
 
 const cardButton2 = document.createElement('button');
 cardButton2.className = 'see-more';
