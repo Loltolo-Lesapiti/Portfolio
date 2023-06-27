@@ -60,7 +60,7 @@ const cards = [
     heading3: 'Petro',
     list1: ['Full Stack Dev', '2022'],
     paragraph: 'Taas Homes is a real estate company website. Taas homes is located in Nairobi Kenya and it deals with house purchase.',
-    desktopImage: './images/Taas_homes.png',
+    desktopImage: './images/Taas_homes.PNG',
     list2: ['html', 'css', 'javaScript'],
     cardButton: 'See Project',
     cardButton1: 'https://loltolo-lesapiti.github.io/Taas-Real-Estate/',
