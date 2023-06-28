@@ -48,7 +48,7 @@ const cards = [
     heading3: 'Petro',
     list1: ['Full Stack Dev', '2022'],
     paragraph: 'Your user-friendly budgeting app with secure authentication, intuitive interface, effortless budget item addition and categorization, real-time tracking of spending habits, and seamless recording of transactions for effective money management.',
-    desktopImage: './images/space_travel.png',
+    desktopImage: './images/space_travel.PNG',
     list2: ['Ruby On Rails', 'PostgreSQL', 'Bootstrap','Rubocop'],
     cardButton: 'See Project',
     cardButton1: 'https://budgetaas.onrender.com/',
