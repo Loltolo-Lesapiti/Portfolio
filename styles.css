@@ -115,6 +115,7 @@ h1 {
   margin-top: -25px;
   font-style: normal;
   margin-left: 20px;
+  margin-right: 20px;
 }
 
 .logo a {
@@ -137,12 +138,13 @@ h1 {
   background-image: url("images/mobile.png");
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 375px 588px;
+  /* background-size: 375px 588px; */
   border-bottom-left-radius: 20px;
   margin-bottom: 30px;
   background-color: #fff;
   background-position-y: 42px;
   padding-bottom: 85px;
+  background-size: contain;
 }
 
 .lets-connect-message {
@@ -547,7 +549,7 @@ textarea {
   color: #6070ff;
   font-size: 15px;
   border-radius: 3px;
-  margin-left: 144px;
+  margin-left: 36px;
 }
 
 .home-content h1{

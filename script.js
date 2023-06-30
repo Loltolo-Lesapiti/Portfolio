@@ -61,7 +61,7 @@ const cards = [
     list1: ['Full Stack Dev', '2022'],
     paragraph: 'Your user-friendly budgeting app with secure authentication, intuitive interface, effortless budget item addition and categorization, real-time tracking of spending habits, and seamless recording of transactions for effective money management.',
     desktopImage: './images/budget.PNG',
-    list2: ['Ruby On Rails', 'PostgreSQL', 'Bootstrap','Rubocop'],
+    list2: ['Ruby on Rails', 'PostgreSQL', 'Bootstrap'],
     cardButton: 'See Project',
     cardButton1: 'https://budgetaas.onrender.com/',
     cardButton2: 'https://github.com/Loltolo-Lesapiti/Budget-App',
