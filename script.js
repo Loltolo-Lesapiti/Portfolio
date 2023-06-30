@@ -19,16 +19,16 @@ links.forEach((link) => {
 });
 const cards = [
   {
-    class: 'flex',
-    header2: 'Taas Forex',
+    class: 'flex reverse',
+    header2: 'Taas Homes',
     heading3: 'Petro',
-    list1: ['Back End Dev', '2022'],
-    paragraph: 'This application makes use of financial modeling API to show real time exchange information of all major currencies.',
-    desktopImage: './images/forex.jpg',
-    list2: ['html', 'css', 'react'],
+    list1: ['Full Stack Dev', '2022'],
+    paragraph: 'Taas Homes is a real estate company website. Taas homes is located in Nairobi Kenya and it deals with house purchase.',
+    desktopImage: './images/Taas_homes.png',
+    list2: ['html', 'css', 'javaScript'],
     cardButton: 'See Project',
-    cardButton1: 'https://stunning-pastelito-fea99b.netlify.app/',
-    cardButton2: 'https://github.com/Loltolo-Lesapiti/Metrics-webapp',
+    cardButton1: 'https://loltolo-lesapiti.github.io/Taas-Real-Estate/',
+    cardButton2: 'https://github.com/Loltolo-Lesapiti/Taas-Real-Estate',
   },
   {
     class: 'flex reverse',
@@ -44,28 +44,28 @@ const cards = [
   },
   {
     class: 'flex',
+    header2: 'Taas Forex',
+    heading3: 'Petro',
+    list1: ['Back End Dev', '2022'],
+    paragraph: 'This application makes use of financial modeling API to show real time exchange information of all major currencies.',
+    desktopImage: './images/forex.jpg',
+    list2: ['html', 'css', 'react'],
+    cardButton: 'See Project',
+    cardButton1: 'https://stunning-pastelito-fea99b.netlify.app/',
+    cardButton2: 'https://github.com/Loltolo-Lesapiti/Metrics-webapp',
+  },
+  {
+    class: 'flex',
     header2: 'Budget App',
     heading3: 'Petro',
     list1: ['Full Stack Dev', '2022'],
     paragraph: 'Your user-friendly budgeting app with secure authentication, intuitive interface, effortless budget item addition and categorization, real-time tracking of spending habits, and seamless recording of transactions for effective money management.',
-    desktopImage: './images/space_travel.png',
-    list2: ['Ruby On Rails', 'PostgreSQL', 'Bootstrap','Rubocop'],
+    desktopImage: './images/budget.PNG',
+    list2: ['Ruby on Rails', 'PostgreSQL', 'Bootstrap'],
     cardButton: 'See Project',
     cardButton1: 'https://budgetaas.onrender.com/',
     cardButton2: 'https://github.com/Loltolo-Lesapiti/Budget-App',
-  },
-  {
-    class: 'flex reverse',
-    header2: 'Taas Homes',
-    heading3: 'Petro',
-    list1: ['Full Stack Dev', '2022'],
-    paragraph: 'Taas Homes is a real estate company website. Taas homes is located in Nairobi Kenya and it deals with house purchase.',
-    desktopImage: './images/Taas_homes.PNG',
-    list2: ['html', 'css', 'javaScript'],
-    cardButton: 'See Project',
-    cardButton1: 'https://loltolo-lesapiti.github.io/Taas-Real-Estate/',
-    cardButton2: 'https://github.com/Loltolo-Lesapiti/Taas-Real-Estate',
-  },
+  }
 ];
 cards.forEach((card, index) => {
   const cardDiv = document.createElement('div');
