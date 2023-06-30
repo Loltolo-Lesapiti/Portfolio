@@ -166,6 +166,7 @@ h1 {
   display: grid;
   gap: 80px;
   margin: 80px 0;
+  align-items: center;
 }
 
 .flex {
@@ -175,7 +176,7 @@ h1 {
   border-radius: 16px;
   align-items: center;
   padding: 15px;
-  width: 80%;
+  /* width: 80%; */
   margin: 0 20px;
   border: 1px solid transparent;
   transition: border-color 0.3s ease;
